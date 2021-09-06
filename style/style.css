@@ -1,0 +1,711 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END OF CSS RESET*/
+
+/*CSS CLEAR FIX*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/*END OF CSS CLEAR FIX*/
+
+/*CSS FONTS*/
+@font-face { font-family: Raleway-Regular; 
+			 src: url('../fonts/Raleway/static/Raleway-Regular.ttf'); } 
+
+@font-face { font-family: Raleway-Bold;
+			 src: url('../fonts/Raleway/static/Raleway-Bold.ttf'); }
+
+@font-face { font-family: OpenSans-Regular;
+			 src: url('../fonts/Open_Sans/OpenSans-Regular.ttf'); }
+/*END OF CSS FONTS*/
+
+
+
+
+
+
+
+
+
+
+/*MY CSS*/
+body {
+	font-family: OpenSans-Regular;
+	font-size: 15px;
+}
+
+
+.nav {
+	/*border: 1px solid black;*/
+	padding: 40px 70px;
+}
+
+.nav img {
+	width: 150px;
+}
+
+.nav a {
+	font-family: Raleway-Regular;
+	text-decoration: none;
+	float: right;
+	display: inline-block;
+	padding: 15px 0;
+	margin-left: 50px;
+	color: hsl(243, 87%, 12%);
+
+}
+
+.main {
+	/*border: 1px solid black;*/
+	padding: 40px 70px;
+}
+
+.main img {
+	float: right;
+	width: 600px;
+}
+
+.main h1 {
+	font-size: 35px;
+	color: hsl(243, 87%, 12%);
+	font-family: Raleway-Bold;
+	line-height: 48px;
+	padding:50px;
+	padding-left: 0;
+	padding-bottom: 0;
+	margin-top: 10px;
+}
+
+.main p {
+	color: hsl(243, 87%, 12%);
+	line-height: 25px;
+	padding: 50px;
+	padding-left: 0;
+	font-size: 15px;
+	padding-bottom: 25px;
+	padding-top: 15px;
+}
+
+.input-email {
+	width: 250px;
+	padding: 10px;
+}
+
+.btn-started {
+	/*width: 150px;*/
+	padding: 10px 43px;
+	margin-left: 10px;
+	border: none;
+	background-color: hsl(224, 93%, 58%);
+	color: #fff;
+	font-family: Raleway-Bold;
+	font-size: 15px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.46);
+	cursor: pointer;
+}
+
+.btn-started:hover {
+	background-color: hsl(238, 22%, 44%);
+}
+
+.curve-desktop {
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: -5px;
+}
+
+.testimonial {
+	/*border: 1px solid #f6f6fe;*/
+	padding: 60px 70px;
+	padding-bottom: 120px;
+	background-color: hsl(240, 75%, 98%);
+}
+
+.illustration-2 {
+	width: 500px;
+	float: right;
+}
+
+.testimonial h1 {
+	font-size: 35px;
+	color: hsl(243, 87%, 12%);
+	font-family: Raleway-Bold;
+	margin-bottom: 30px;
+}
+
+.testimonial p {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.testimonial p:first-of-type {
+	margin-bottom: 20px;
+}
+
+.testimonial a {
+	display: inline-block;
+	padding: 20px 0;
+	box-sizing: border-box;
+	color: hsl(170, 45%, 43%);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.testimonial a img {
+	padding-left: 5px;
+}
+
+.box-testi {
+	padding: 20px 40px;
+	padding-top: 35px;
+	margin-top: 20px;
+	width: 25%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.1);
+}
+
+.box-testi p {
+	font-size: 13px;
+}
+
+.box-testi img {
+	width: 15px;
+	margin-bottom: 10px;
+}
+
+.person-testi img {
+	border-radius: 50%;
+	width: 43px;
+	float: left;
+	padding-right: 17px;
+}
+
+.person-testi p {
+	font-family: Raleway-Regular;
+}
+
+.person-testi span {
+	font-family: Raleway-Bold;
+	display: block;
+	font-size: 13px;
+}
+
+.person-testi span:first-of-type {
+	margin-top: 5px;
+}
+
+.person-testi span:last-of-type {
+	font-family: OpenSans-Regular;
+	margin-top: 7px;
+}
+
+.subscribe {
+	background-color: hsl(238, 22%, 44%);
+	color: #fff;
+	padding: 100px;
+	padding-left: 70px;
+}
+
+.sub-text {
+	float: left;
+}
+
+.sub-text h1 {
+	font-size: 30px;
+	font-family: Raleway-Bold;
+	margin-bottom: 25px;
+}
+
+.sub-text p {
+	font-size: 17px;
+	line-height: 25px;
+}
+
+.input-box {
+	float: right;
+}
+
+.input-box input:first-of-type {
+	width: 400px;
+	padding: 13px 18px;
+	margin-bottom: 14px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 0px 13px -4px rgba(255,255,255,0.46);}
+
+.input-box input:last-of-type {
+	padding: 13px 25px;
+	color: #fff;
+	background-color: hsl(224, 93%, 58%);
+	border: none;
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.46);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.input-box input:last-of-type:hover {
+	background-color: hsl(170, 45%, 43%);
+}
+
+.footer {
+	background-color: hsl(243, 87%, 12%);
+	color: #fff;
+	display: grid;
+	padding: 100px;
+	padding-left: 70px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 50px;
+}
+
+.float-1 span {
+	display: block;
+	margin-top: 20px;
+}
+
+.float-1 span img {
+	padding-right: 17px;
+	padding-top: 9px;
+	width: 15px;
+}
+
+.float-2 {
+	padding-left: 130px;
+}
+
+.float-2 a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	margin-top: 25px;
+}
+
+.float-3 {
+	padding-left: 80px;
+}
+
+.float-3 a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	margin-top: 25px;
+}
+
+.float-4 a img {
+	width: 32px;
+	margin-left: 25px;
+}
+
+.float-2, .float-3, .float-4 {
+	margin-top: 57px;
+}
+
+.float-4 {
+	padding-top: 25px;
+}
+
+.footer a:hover {
+	color: hsl(170, 45%, 43%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE VIEW*/
+@media screen and (max-width: 375px) {
+	body {
+	font-family: OpenSans-Regular;
+	font-size: 12px;
+	/*width: 100%;*/
+}
+
+
+.nav {
+	/*border: 1px solid black;*/	
+	padding: 35px 20px;
+	/*width: 100%;*/
+}
+
+.nav img {
+	width: 90px;
+}
+
+.nav a {
+	font-family: Raleway-Regular;
+	text-decoration: none;
+	float: right;
+	display: inline-block;
+	padding: 5px 0;
+	margin-left: 20px;
+	color: hsl(243, 87%, 12%);
+
+}
+
+.main {
+	/*border: 1px solid black;*/
+	padding: 35px 20px;
+}
+
+.main img {
+	float: none;
+	width: 100%;
+}
+
+.main h1 {
+	font-size: 17px;
+	text-align: center;
+	color: hsl(243, 87%, 12%);
+	font-family: Raleway-Bold;
+	line-height: 25px;
+	padding:0px;
+	padding-left: 0;
+	padding-bottom: 0;
+	margin-top: 40px;
+}
+
+br {
+	display: none;
+}
+
+.main p {
+	color: hsl(243, 87%, 12%);
+	line-height: 20px;
+	padding: 0px;
+	padding-left: 0;
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 15px;
+}
+
+.input-email {
+	width: 80%;
+	padding: 8px;
+	margin: 0 23px;
+}
+
+.btn-started {
+	/*width: 150px;*/
+	width: 86%;
+	padding: 10px 0px;
+	margin-left: 0px;
+	margin: 0px 23px;
+	margin-top: 13px;
+	border: none;
+	background-color: hsl(224, 93%, 58%);
+	color: #fff;
+	font-family: Raleway-Bold;
+	font-size: 13px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.46);
+	cursor: pointer;
+}
+
+.btn-started:hover {
+	background-color: hsl(238, 22%, 44%);
+}
+
+.curve-desktop {
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: -5px;
+}
+
+.testimonial {
+	/*border: 1px solid #000;*/
+	padding: 35px 20px;
+	padding-bottom: 70px;
+	background-color: hsl(240, 75%, 98%);
+}
+
+.illustration-2 {
+	width: 100%;
+	float: none;
+}
+
+.testimonial h1 {
+	font-size: 17px;
+	color: hsl(243, 87%, 12%);
+	font-family: Raleway-Bold;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.testimonial p {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.testimonial p:first-of-type {
+	margin-bottom: 20px;
+}
+
+.testimonial a {
+	display: inline-block;
+	padding: 20px 0;
+	box-sizing: border-box;
+	color: hsl(170, 45%, 43%);
+	text-decoration: underline;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+}
+
+
+.arrow-icon {
+	display: none;
+}
+
+
+.box-testi {
+	padding: 15px 50px;
+	padding-top: 25px;
+	margin-top: 30px;
+	width: 70%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.1);
+}
+
+.box-testi p {
+	font-size: 12px;
+}
+
+.box-testi img {
+	margin-bottom: 13px;
+}
+
+.person-testi img {
+	border-radius: 50%;
+	width: 48px;
+	float: left;
+	padding-right: 17px;
+}
+
+.person-testi p {
+	font-family: Raleway-Regular;
+}
+
+.person-testi span {
+	font-family: Raleway-Bold;
+	display: block;
+	font-size: 13px;
+}
+
+.person-testi span:first-of-type {
+	margin-top: 5px;
+}
+
+.person-testi span:last-of-type {
+	font-family: OpenSans-Regular;
+	margin-top: 7px;
+}
+
+.subscribe {
+	background-color: hsl(238, 22%, 44%);
+	color: #fff;
+	padding: 35px 20px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.sub-text {
+	float: none;
+}
+
+.sub-text h1 {
+	font-size: 17px;
+	text-align: center;
+	font-family: Raleway-Bold;
+	margin-bottom: 17px;
+}
+
+.sub-text p {
+	font-size: 12px;
+	line-height: 17px;
+	text-align: center;
+	padding: 0 30px;
+}
+
+.input-box {
+	float: none;
+}
+
+.input-box input:first-of-type {
+	width: 65%;
+	padding: 10px 13px;
+	margin: 0 46px;
+	margin-bottom: 12px;
+	margin-top: 23px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 0px 13px -4px rgba(255,255,255,0.46);}
+
+.input-box input:last-of-type {
+	padding: 10px 15px;
+	color: #fff;
+	width: 73%;
+	background-color: hsl(224, 93%, 58%);
+	border: none;
+	margin: 0 46px;
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.46);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.input-box input:last-of-type:hover {
+	background-color: hsl(170, 45%, 43%);
+}
+
+.footer {
+	background-color: hsl(243, 87%, 12%);
+	color: #fff;
+	display: block;
+	padding: 50px 0;
+	padding-left: 60px;
+}
+
+.logo-footer {
+	width: 150px;
+}
+
+.float-1 span {
+	display: block;
+	margin-top: 20px;
+}
+
+.float-1 span img {
+	width: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+}
+
+.float-2 {
+	padding-left: 0px;
+}
+
+.float-2 a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	margin-top: 25px;
+}
+
+.float-3 {
+	padding-left: 0px;
+}
+
+.float-3 a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	margin-top: 25px;
+}
+
+.float-4 a img {
+	width: 22px;
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.float-4 a:first-of-type {
+	margin-left: 85px;
+}
+.float-2, .float-3, .float-4 {
+	margin-top: 50px;
+}
+
+.float-4 {
+	padding-top: 0px;
+}
+
+.footer a:hover {
+	color: hsl(170, 45%, 43%);
+}
+
+}
